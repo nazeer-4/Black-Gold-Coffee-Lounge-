@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLACK GOLD CAFE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      background-image: url('images/LOGO HTML.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar shrink effect */
+    .navbar-scrolled {
+      background-color: #f8f9fa !important;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      transition: all 0.3s;
+    }
+
+    /* Back to Top Button */
+    #backToTop {
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      padding: 10px 15px;
+      background: red;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: none;
+      z-index: 1000;
+    }
+    #backToTop:hover { background-color: darkred; }
+
+    /* Image hover effects */
+    img {
+      transition: transform 0.5s, filter 0.5s;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    img:hover {
+      transform: scale(1.05);       
+      filter: brightness(0.8) sepia(0.2);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    }
+
+    /* Card adjustments */
+    .card-body p { margin: 5px 0; }
+
+    /* Responsive text for social icons */
+    .social-icons i { font-size: 24px; margin: 0 10px; }
+
+    /* Adjust navbar brand font on small screens */
+    @media (max-width: 768px) {
+      .navbar-brand { font-size: 20px; }
+      .ma { margin-left: 0; text-align: center; font-size: 40px; }
+    }
+
+    @media (max-width: 576px) {
+      .card-body h5 { font-size: 16px; }
+      .card-body p { font-size: 14px; }
+      #backToTop { bottom: 20px; right: 20px; padding: 8px 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Carousel -->
+  <div class="container-fluid px-0">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="nazeeruu.jpeg" class="d-block w-100" alt="cafe1">
+        </div>
+        <div class="carousel-item">
+          <img src="cup.jpeg" class="d-block w-100" alt="cafe2">
+        </div>
+        <div class="carousel-item">
+          <img src="coffe1.html.webp" class="d-block w-100" alt="cafe3">
+        </div>
+        <div class="carousel-item">
+          <img src="My first design (1).jpeg" class="d-block w-100" alt="milkshake">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand link-danger" href="index.html">Black Gold</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll">
+          <li class="nav-item"><a class="nav-link link-danger" href="na.html">E-shop <i class="fa fa-shopping-cart"></i></a></li>
+          <li class="nav-item"><a class="nav-link link-danger" href="order.html">Order online</a></li>
+          <li class="nav-item"><a class="nav-link link-danger" href="menu.html">Cafe Menu</a></li>
+          <li class="nav-item"><a class="nav-link link-danger" href="cafe finder.html">Cafe Finder/Cafe Locator</a></li>
+          <li class="nav-item"><a class="nav-link link-danger" href="about.html">About Us</a></li>
+        </ul>
+        <form class="d-flex">
+          <i class="fa fa-search me-2"></i>
+          <i class="fa fa-bell me-2"></i>
+          <a href="login.html">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                </a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Featured Images -->
+  <div class="container my-5">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6 col-12"><img src="cake love.jpeg" class="img-fluid" alt="cake"></div>
+      <div class="col-lg-4 col-md-6 col-12"><img src="coffee beans.jpeg" class="img-fluid" alt="coffee beans"></div>
+      <div class="col-lg-4 col-md-6 col-12"><img src="coffee dark.jpeg" class="img-fluid" alt="coffee dark"></div>
+    </div>
+  </div>
+
+  <!-- Social Icons -->
+  <div class="container text-center mb-5 social-icons">
+    <a href="#"><i class="fa fa-instagram" style="color:red;"></i></a>
+    <a href="#"><i class="fa fa-facebook-official" style="color:blue;"></i></a>
+    <a href="#"><i class="fa fa-youtube-play" style="color:red;"></i></a>
+    <a href="#"><i class="fa fa-twitter" style="color:skyblue;"></i></a>
+  </div>
+
+  <!-- Cards Section -->
+  <div class="container mb-5">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4">
+      <div class="col"><div class="card h-100"><div class="card-body"><h5 class="card-title">Quick links</h5><p>Cafe Menu</p><p>Cafe Finder/Cafe Locator</p><p>Customer Care</p></div></div></div>
+      <div class="col"><div class="card h-100"><div class="card-body"><h5 class="card-title">Cafe Menu</h5><p>Food For Mood</p><p>Hot classic</p><p>Yuzu desserts</p><p>Ice creams</p><p>Seasonal Dishes</p><p>All-day brunch food</p></div></div></div>
+      <div class="col"><div class="card h-100"><div class="card-body"><h5 class="card-title">Shop</h5><p>Coffee Mugs & Cups</p><p>Coffee Makers & Wakecup</p><p>Coffee Powders</p><p>Gifts</p></div></div></div>
+      <div class="col"><div class="card h-100"><div class="card-body"><h5 class="card-title">Business</h5><p>Lease Enquiry</p><p>Advertise With Us</p><p>Coffee Vending Machine</p><p>Outdoor Catering Service</p><p>Contact Us</p></div></div></div>
+      <div class="col"><div class="card h-100"><div class="card-body"><h5 class="card-title">About Us</h5><p>Awards</p><p>Business</p><p>Governance</p><p>Bean to Cup</p><p>News & Events</p><p>Careers</p><p>Contact Us</p></div></div></div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop">↑ Top</button>
+
+  <!-- JavaScript -->
+  <script>
+    // Navbar shrink on scroll
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) { navbar.classList.add('navbar-scrolled'); }
+      else { navbar.classList.remove('navbar-scrolled'); }
+    });
+
+    // Back to top button
+    const topButton = document.getElementById('backToTop');
+    topButton.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+    window.addEventListener('scroll', () => { topButton.style.display = window.scrollY > 300 ? 'block' : 'none'; });
+  </script>
+</body>
+</html>
